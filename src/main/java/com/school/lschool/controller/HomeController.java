@@ -13,7 +13,7 @@ import java.util.Optional;
 @RestController
 
 public class HomeController {
-    @GetMapping("/inicio")
+    @GetMapping("/")
     public ModelAndView index() {
         ModelAndView mv = new ModelAndView("/home");
         return mv;
