@@ -12,7 +12,7 @@ public class Student {
     private Long id;
     private String name;
     private String cpf;
-    private LocalDate dataNascimento;
+    private LocalDate birthDate;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Subject> subjects;
@@ -34,7 +34,7 @@ public class Student {
     }
 
     public LocalDate getDataNascimento() {
-        return dataNascimento;
+        return birthDate;
     }
 
     public void setName(String name) {
@@ -50,7 +50,7 @@ public class Student {
     }
 
     public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
+        this.birthDate = dataNascimento;
     }
 
 

@@ -10,7 +10,7 @@ public class Teacher {
     private Long id;
     private String name;
     private String cpf;
-    private LocalDate dataNascimento;
+    private LocalDate birthDate;
 
     public String getName() {
         return name;
@@ -25,7 +25,7 @@ public class Teacher {
     }
 
     public LocalDate getDataNascimento() {
-        return dataNascimento;
+        return birthDate;
     }
 
     public void setName(String name) {
@@ -41,6 +41,6 @@ public class Teacher {
     }
 
     public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
+        this.birthDate = dataNascimento;
     }
 }
